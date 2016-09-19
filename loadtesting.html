@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <img src="images/grey.gif" data-original="images/pc_stick_icons_ezcarry.jpg" class="lazy img-responsive">
+  <img src="images/eql360indicator.png" data-original="images/pc_stick_icons_pclike.jpg" class="img-responsive lazy" width="250px">
+  <img src="images/eql360indicator.png" data-original="images/pc_stick_icons_pnp.jpg" class="img-responsive lazy" width="250px">
+  <img src="images/eql360indicator.png" data-original="images/pc_stick_icons_power.jpg" class="lazy img-responsive" width="250px">
+  <img src="images/eql360indicator.png" data-original="images/pc_stick_icons_superthin.jpg" class="lazy img-responsive">
+  <img src="images/eql360indicator.png" data-original="images/pc_stick_icons_win10.jpg" class="lazy img-responsive" width="250px">
+</body>
+</html>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js""></script>
+<script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
+<script>
+
+jQuery(document).ready(function($) {
+    $(function(){
+      $("img.lazy").lazyload({
+      effect : "fadeIn"
+      });
+    });
+});
+/*
+$(function() {
+    $("img.lazy").lazyload({
+        event : "sporty"
+
+    });
+});
+
+$(window).bind("load", function() {
+    var timeout = setTimeout(function() {
+        $("img.lazy").trigger("sporty")
+    }, 5000);
+});*/
+</script>
